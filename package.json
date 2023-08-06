@@ -1,0 +1,14 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "lerna": "3.22.1"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "publishConfig": {
+    "registry": "https://nexus.relengd.benxdevops.io/repository/npm-private/"
+  },
+  "packageManager": "yarn@3.4.1"
+}

@@ -1,0 +1,20 @@
+{
+  "packages": ["packages/*"],
+  "version": "independent",
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "command": {
+    "publish": {
+      "graphType": "all",
+      "ignoreChanges": [
+        "*.md",
+        "package.json",
+        "package-lock.json",
+        "yarn.lock",
+        ".npmrc"
+      ],
+      "message": "build(release): publish",
+      "registry": "https://nexus.relengd.benxdevops.io/repository/npm-private/"
+    }
+  }
+}
